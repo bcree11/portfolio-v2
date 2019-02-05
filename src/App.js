@@ -5,7 +5,6 @@ import './App.css'
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom'
 
@@ -23,24 +22,24 @@ export default class App extends Component {
   }
 }
 
-componentDidMount = () => {
-  window.addEventListener('scroll', this.handleScroll, { passive: true })
-}
-
-componentWillUnmount = () => {
-  window.removeEventListener('scroll', this.handleScroll)
-}
-
-handleScroll = (event) => {
-  let {pageWindow, checkScroll, title}=this.state
-  let before = checkScroll
-  this.setState({checkScroll: pageWindow.scrollY})
-  if(before < this.state.checkScroll){
-    this.setState({title: 'BRANDON CREE'})
-  } else {
-    this.setState({title: 'b.marcus.cree@gmail.com'})
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.handleScroll, { passive: true })
   }
-}
+
+  componentWillUnmount = () => {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = (event) => {
+    let {pageWindow, checkScroll, title}=this.state
+    let before = checkScroll
+    this.setState({checkScroll: pageWindow.scrollY})
+    if(before < this.state.checkScroll){
+      this.setState({title: 'BRANDON CREE'})
+    } else {
+      this.setState({title: 'b.marcus.cree@gmail.com'})
+    }
+  }
 
   render() {
     return (

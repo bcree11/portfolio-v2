@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 import Header from '../components/Header'
+import AboutMe from '../components/AboutMe'
+import MyFooter from '../components/MyFooter'
 
 export default class Home extends Component{
 
@@ -8,7 +10,8 @@ export default class Home extends Component{
     return(
       <div>
         <Header/>
-        <div style={{height: '300vh'}}></div>
+        <AboutMe/>
+        <MyFooter/>
       </div>
     )
   }
