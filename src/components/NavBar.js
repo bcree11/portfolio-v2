@@ -4,14 +4,15 @@ export default class NavBar extends Component{
 
   render(){
     return(
-      <div className='navbar-fixed'>
-        <nav>
+      <div className='navbar-fixed' style={navBarStyle}>
+        <nav style={navBarStyle}>
           <div className="nav-wrapper light-blue darken-1">
-            <a style={navBarStyle} href="#" className="brand-logo center">{this.props.title}</a>
+            <a href="#" className="brand-logo center">{this.props.title}</a>
             <ul id="nav-mobile" className="left hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
+              <li><a href="sass.html">About Me</a></li>
+              <li><a href="badges.html">Skills</a></li>
+              <li><a href="collapsible.html">Portfolio</a></li>
+              <li><a href="collapsible.html">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -21,5 +22,7 @@ export default class NavBar extends Component{
 }
 
 const navBarStyle = {
+  height: '8vh',
   textTransform: 'none',
+  marginBottom: '0'
 }

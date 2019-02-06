@@ -3,7 +3,10 @@ import React, { Component } from 'react'
 import {
   Row,
   Col,
-  MediaBox
+  MediaBox,
+  Card,
+  CardPanel,
+  CardTitle,
 } from 'react-materialize'
 
 export default class AboutMe extends Component{
@@ -16,14 +19,25 @@ export default class AboutMe extends Component{
           </Col>
         </Row>
         <Row>
-            <MediaBox className='left' style={{border: '2px solid black', marginLeft: '16dp'}}src="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/StoryArc/1561/1561._SX400_QL80_TTD_.jpg" caption="Brandon Cree" width="25%"/>
-          <Col className='right' s={8} style={textStyle}>
-            <h3 style={titleStyle}>Who Am I?</h3>
-            <hr/>
-            <p className="flow-text">
-              Hi, my name is Brandon. I’m a student at LEARN Academy, where I’m studying the ins and outs of full stack web development after 4 years in sales in the beer industry. I’m a logical thinker who enjoys problem solving and building things out piece by piece.
-            </p>
+          <Col className='hide-on-med-and-down' s={1}></Col>
+          <Col l={3} m={10}>
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/StoryArc/1561/1561._SX400_QL80_TTD_.jpg"/>
+              </div>
+            </div>
           </Col>
+          <Col className='hide-on-med-and-down' s={1}></Col>
+          <Col l={6} m={10} style={textStyle}>
+            <CardPanel>
+              <h3 style={titleStyle}>Who Am I?</h3>
+              <hr/>
+              <p className="flow-text">
+                Hi, my name is Brandon. I’m a student at LEARN Academy, where I’m studying the ins and outs of full stack web development after 4 years in sales in the beer industry. I’m a logical thinker who enjoys problem solving and building things out piece by piece.
+              </p>
+            </CardPanel>
+          </Col>
+          <Col className='hide-on-med-and-down' s={1}></Col>
         </Row>
       </div>
     )
@@ -40,6 +54,6 @@ const titleStyle = {
 }
 
 const textStyle = {
-  height: '25vw',
-  border: '2px solid black'
+  // height: '25vw',
+  // border: '2px solid black'
 }

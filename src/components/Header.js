@@ -4,16 +4,18 @@ export default class Header extends Component{
   render(){
     return(
       <div style={bgStyle}>
-        <div className='hide-on-small-only' style={titleStyle}>BRANDON CREE</div>
-        <div className='show-on-small hide-on-med-and-up' style={titleStyle}>B.CREE</div>
+        <span className='hide-on-small-only' style={titleStyle}>BRANDON CREE</span>
+        <span className='show-on-small hide-on-med-and-up' style={titleStyle}>B.CREE</span>
           <div style={linkStyles}>
             <h4>Full-Stack Web Developer</h4>
+            <div  style={{marginBottom: '1em'}}>
             <a href="https://github.com/bcree11" target="_blank">
               <i className="zmdi zmdi-github-box"></i>
             </a>{' | '}
             <a href="https://www.linkedin.com/in/bcree/" target="_blank">
               <i className="zmdi zmdi-linkedin-box"></i>
             </a>
+            </div>
           </div>
       </div>
     )
@@ -21,12 +23,12 @@ export default class Header extends Component{
 }
 
 const bgStyle = {
-  height: '91vh',
-  width: '100vw',
+  height: '92vh',
   backgroundImage: `url(${require("../img/beachSunset.jpg")})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: '50%',
+  backgroundPositionX: '50%',
+  backgroundPositionY: '70%',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
