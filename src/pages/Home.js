@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 
 import Header from '../components/Header'
+import PicCard from '../components/PicCard'
 import AboutMe from '../components/AboutMe'
+import Languages from '../components/Languages'
+import Frameworks from '../components/Frameworks'
+import OtherSkills from '../components/OtherSkills'
 import MyFooter from '../components/MyFooter'
-import Skills from '../components/Skills'
 
 export default class Home extends Component{
 
@@ -11,8 +14,11 @@ export default class Home extends Component{
     return(
       <div>
         <Header/>
+        <PicCard/>
         <AboutMe/>
-        <Skills/>
+        <Languages/>
+        <Frameworks/>
+        <OtherSkills/>
         <MyFooter/>
       </div>
     )

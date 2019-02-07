@@ -54,3 +54,5 @@ export default class App extends Component {
     )
   }
 }
+
+// Put 404 page not found component underneath Home
