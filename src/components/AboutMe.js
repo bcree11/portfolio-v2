@@ -13,7 +13,7 @@ import {
 
 const AboutMe = (props) => {
   return(
-    <div className='AboutMe' style={aboutMeStyle}>
+    <div id='aboutMe' className='AboutMe' style={aboutMeStyle}>
         <div className="card-panel text" style={textContStyle}>
           <h3 style={titleStyle}>Who Am I?</h3>
           <hr/>
