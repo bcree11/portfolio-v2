@@ -8,11 +8,11 @@ export default class Header extends Component{
         <span className='show-on-small hide-on-med-and-up' style={titleStyle}>B.CREE</span>
           <div style={linkStyles}>
             <h4>Full-Stack Web Developer</h4>
-            <div  style={{marginBottom: '1em'}}>
-            <a href="https://github.com/bcree11" target="_blank">
+            <div style={{marginBottom: '1em'}}>
+            <a style={{marginRight: '1rem'}} className='waves-effect waves-light hoverable btn-floating light-blue darken-1' href="https://github.com/bcree11" target="_blank">
               <i className="zmdi zmdi-github-box"></i>
-            </a>{' | '}
-            <a href="https://www.linkedin.com/in/bcree/" target="_blank">
+            </a>{' '}
+            <a className='waves-effect waves-light hoverable btn-floating light-blue darken-1' href="https://www.linkedin.com/in/bcree/" target="_blank">
               <i className="zmdi zmdi-linkedin-box"></i>
             </a>
             </div>
@@ -24,7 +24,7 @@ export default class Header extends Component{
 
 const bgStyle = {
   height: '92vh',
-  backgroundImage: `url(${require("../img/beachSunset.jpg")})`,
+  backgroundImage: `url("./img/beachSunset.jpg")`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPositionX: '50%',

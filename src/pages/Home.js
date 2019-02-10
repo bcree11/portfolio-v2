@@ -11,7 +11,7 @@ import OtherSkills from '../components/OtherSkills'
 import Portfolio from '../components/Portfolio'
 import MyFooter from '../components/MyFooter'
 
-import '../stylesheets/Home.css'
+import '../stylesheets/Masonry.css'
 
 export default class Home extends Component{
 
@@ -21,13 +21,13 @@ export default class Home extends Component{
         <Header/>
         <PicCard/>
         <AboutMe/>
-        <div className='masonry-cont'>
-          <div className='masonry'>
-            <div className='masonry-brick'><Languages/></div>
-            <div className='masonry-brick'><Databases/></div>
-            <div className='masonry-brick'><Testing/></div>
-            <div className='masonry-brick'><Frameworks/></div>
-            <div className='masonry-brick'><OtherSkills/></div>
+        <div className='masonry-Homecont'>
+          <div className='masonry-Home'>
+            <div className='masonry-Homebrick'><Languages/></div>
+            <div className='masonry-Homebrick'><Databases/></div>
+            <div className='masonry-Homebrick'><Testing/></div>
+            <div className='masonry-Homebrick'><Frameworks/></div>
+            <div className='masonry-Homebrick'><OtherSkills/></div>
           </div>
         </div>
         <Portfolio/>

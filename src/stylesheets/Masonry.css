@@ -1,0 +1,44 @@
+.masonry-Home {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 100rem;
+}
+
+.masonry-Homecont {
+  display: flex;
+  justify-content: center;
+  margin-left: -30rem;
+}
+
+.masonry-Homebrick {
+  margin: 0 3rem 3rem 0; /* Some gutter */
+  width:30rem;
+  display: flex;
+  justify-content: center;
+}
+
+.masonry-Homebrick {
+  margin: 0 3rem 3rem 0; /* Some gutter */
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .masonry-Homecont {
+  margin: 0;
+  }
+
+  .masonry-Home {
+    flex-flow: column nowrap;
+    max-height: none;
+  }
+  .masonry-Homebrick {
+    margin: 0 0 3rem 0;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .masonry-Homebrick {width: 90vw;}
+
+}

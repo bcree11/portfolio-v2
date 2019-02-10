@@ -1,0 +1,21 @@
+.displayGrid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 27vw);
+  grid-gap: 3rem;
+  max-height: 100rem;
+}
+
+@media (max-width: 768px) {
+  .displayGrid {
+    grid-template-columns: repeat(2, 45vw);
+    max-height: inherit;
+  }
+}
+
+@media (max-width: 425px) {
+  .displayGrid {
+    grid-template-columns: repeat(1, 90vw);
+  }
+}
