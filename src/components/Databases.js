@@ -5,7 +5,7 @@ import '../stylesheets/Skills.css'
 const Databases = (props) => {
   return(
     <div className='skills-width'>
-      <div className="card skills-contStyle">
+      <div className="card z-depth-3 skills-contStyle">
         <h3 className='skills-title visuallyhidden'>Databases ={' ['}</h3>
         <h3 className='skills-title visuallyhidden2'>Databases</h3>
         <div className='skills-block'>
@@ -16,8 +16,8 @@ const Databases = (props) => {
           /*{ name: "\"MySQL\",",
             logo: "https://seeklogo.com/images/M/mysql-logo-B047FB7790-seeklogo.com.png",
           },*/
-        ].map(src => (
-          <div className='skills-iconCont'>
+        ].map((src, index) => (
+          <div key={index} className='skills-iconCont'>
             <div className='skills-frame'>
               <h6 className='skills-marginR visuallyhidden'>{'{ '}name:</h6>
               <h5>{src.name}</h5>

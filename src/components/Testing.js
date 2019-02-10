@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 const Testing = (props) => {
   return(
     <div className='skills-width'>
-      <div className="card  skills-contStyle">
+      <div className="card z-depth-3 skills-contStyle">
         <h3 className='skills-title visuallyhidden'>Testing ={' ['}</h3>
         <h3 className='skills-title visuallyhidden2'>Testing</h3>
         <div className='skills-block'>
@@ -14,8 +14,8 @@ const Testing = (props) => {
           { name: "\"RSPEC\",",
             logo: "http://rspec.info/images/logo_ogp.png",
           },
-        ].map(src => (
-          <div className='skills-iconCont'>
+        ].map((src, index) => (
+          <div key={index} className='skills-iconCont'>
             <div className='skills-frame'>
               <h6 className='skills-marginR visuallyhidden'>{'{ '}name:</h6>
               <h5>{src.name}</h5>

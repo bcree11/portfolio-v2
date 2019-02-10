@@ -7,7 +7,7 @@ import '../stylesheets/Skills.css'
 const Frameworks = (props) => {
   return(
     <div className='skills-width'>
-      <div className="card skills-contStyle">
+      <div className="card z-depth-3 skills-contStyle">
         <h3 className='skills-title visuallyhidden'>Frameworks ={' ['}</h3>
         <h3 className='skills-title visuallyhidden2'>Frameworks</h3>
           <div className='skills-block'>
@@ -27,8 +27,8 @@ const Frameworks = (props) => {
             { name: "\"Bootstrap\",",
               logo: "https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png",
             },
-          ].map(src => (
-            <div className='skills-iconCont'>
+          ].map((src, index) => (
+            <div key={index} className='skills-iconCont'>
               <div className='skills-frame'>
                 <h6 className='skills-marginR visuallyhidden'>{'{ '}name:</h6>
                 <h5>{src.name}</h5>

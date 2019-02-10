@@ -8,6 +8,7 @@ import Frameworks from '../components/Frameworks'
 import Databases from '../components/Databases'
 import Testing from '../components/Testing'
 import OtherSkills from '../components/OtherSkills'
+import Portfolio from '../components/Portfolio'
 import MyFooter from '../components/MyFooter'
 
 import '../stylesheets/Home.css'
@@ -29,6 +30,7 @@ export default class Home extends Component{
             <div className='masonry-brick'><OtherSkills/></div>
           </div>
         </div>
+        <Portfolio/>
         <MyFooter/>
       </div>
     )

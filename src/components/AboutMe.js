@@ -14,7 +14,7 @@ import {
 const AboutMe = (props) => {
   return(
     <div id='aboutMe' className='AboutMe' style={aboutMeStyle}>
-        <div className="card-panel text" style={textContStyle}>
+        <div className="card-panel z-depth-3 text" style={textContStyle}>
           <h3 style={titleStyle}>Who Am I?</h3>
           <hr/>
           <p className="text flow-text">
@@ -38,5 +38,5 @@ let titleStyle = {
 }
 
 let textContStyle = {
-  width: '60vw'
+  width: '90vw'
 }
